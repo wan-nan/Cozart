@@ -11,6 +11,6 @@ vmlinux
 modules
 compiled-kernels/
 kernelbuild
-*.benchresult
+# *.benchresult
 /linux-*
 
