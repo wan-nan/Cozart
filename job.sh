@@ -72,7 +72,7 @@ benchmark() {
             -drive file="$(pwd)/qemu-disk.ext4",if=ide,format=raw \
             -nographic -no-reboot \
             -append "panic=-1 console=ttyS0 root=/dev/sda rw init=/benchmark-scripts/$app.sh" \
-            > $app.cozart.benchresult;
+            > ./test/$app/$app.cozart.benchresult;
 
         echo "Benchmark $app on base kernel"
        $qemubin -cpu $cpu -enable-kvm -smp $cores -m $mem \
@@ -80,7 +80,7 @@ benchmark() {
             -drive file="$(pwd)/qemu-disk.ext4",if=ide,format=raw \
             -nographic -no-reboot \
             -append "panic=-1 console=ttyS0 root=/dev/sda rw init=/benchmark-scripts/$app.sh" \
-            > $app.base.benchresult;
+            > ./test/$app/$app.base.benchresult;
 
     done
 }

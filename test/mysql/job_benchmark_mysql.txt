@@ -1,0 +1,123 @@
+sed -i 's/reqcnt=.*/reqcnt=100000/' benchmark-scripts/*.sh
+sed -i 's/reqcnt=.*/reqcnt=10000/' benchmark-scripts/*memcached.sh
+sed -i 's/itr=.*/itr=20/' benchmark-scripts/*.sh
+make sync-scripts
+make[1]: Entering directory '/Cozart'
+./copy2disks.sh benchmark-scripts
+umount: /Cozart/mnt: not mounted
+sending incremental file list
+benchmark-scripts/
+benchmark-scripts/apache-bench.sh
+            554 100%    0.00kB/s    0:00:00              554 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=57/61)
+benchmark-scripts/apache-make-test.sh
+            357 100%  348.63kB/s    0:00:00              357 100%  348.63kB/s    0:00:00 (xfr#2, to-chk=56/61)
+benchmark-scripts/apache-test.sh
+            198 100%  193.36kB/s    0:00:00              198 100%  193.36kB/s    0:00:00 (xfr#3, to-chk=55/61)
+benchmark-scripts/apache.sh
+            270 100%  263.67kB/s    0:00:00              270 100%  263.67kB/s    0:00:00 (xfr#4, to-chk=54/61)
+benchmark-scripts/boot-time.sh
+            366 100%  357.42kB/s    0:00:00              366 100%  357.42kB/s    0:00:00 (xfr#5, to-chk=53/61)
+benchmark-scripts/boot.sh
+            109 100%  106.45kB/s    0:00:00              109 100%  106.45kB/s    0:00:00 (xfr#6, to-chk=52/61)
+benchmark-scripts/cassandra.sh
+            556 100%  542.97kB/s    0:00:00              556 100%  542.97kB/s    0:00:00 (xfr#7, to-chk=51/61)
+benchmark-scripts/cgroupfs-mount.sh
+          1.28K 100%    1.22MB/s    0:00:00            1.28K 100%    1.22MB/s    0:00:00 (xfr#8, to-chk=50/61)
+benchmark-scripts/check-config.sh
+         10.31K 100%    9.84MB/s    0:00:00           10.31K 100%    9.84MB/s    0:00:00 (xfr#9, to-chk=49/61)
+benchmark-scripts/docker-apache.sh
+            388 100%  378.91kB/s    0:00:00              388 100%  378.91kB/s    0:00:00 (xfr#10, to-chk=48/61)
+benchmark-scripts/docker-cassandra.sh
+            671 100%  655.27kB/s    0:00:00              671 100%  655.27kB/s    0:00:00 (xfr#11, to-chk=47/61)
+benchmark-scripts/docker-hello.sh
+            258 100%  251.95kB/s    0:00:00              258 100%  251.95kB/s    0:00:00 (xfr#12, to-chk=46/61)
+benchmark-scripts/docker-helper.sh
+            244 100%  238.28kB/s    0:00:00              244 100%  238.28kB/s    0:00:00 (xfr#13, to-chk=45/61)
+benchmark-scripts/docker-install-images.sh
+            428 100%  417.97kB/s    0:00:00              428 100%  417.97kB/s    0:00:00 (xfr#14, to-chk=44/61)
+benchmark-scripts/docker-memcached.sh
+            469 100%  458.01kB/s    0:00:00              469 100%  458.01kB/s    0:00:00 (xfr#15, to-chk=43/61)
+benchmark-scripts/docker-mysql.sh
+            855 100%  834.96kB/s    0:00:00              855 100%  834.96kB/s    0:00:00 (xfr#16, to-chk=42/61)
+benchmark-scripts/docker-nginx.sh
+            388 100%  378.91kB/s    0:00:00              388 100%  378.91kB/s    0:00:00 (xfr#17, to-chk=41/61)
+benchmark-scripts/docker-php.sh
+            275 100%  268.55kB/s    0:00:00              275 100%  268.55kB/s    0:00:00 (xfr#18, to-chk=40/61)
+benchmark-scripts/docker-redis.sh
+            408 100%  398.44kB/s    0:00:00              408 100%  398.44kB/s    0:00:00 (xfr#19, to-chk=39/61)
+benchmark-scripts/docker-unixbench.sh
+            274 100%  267.58kB/s    0:00:00              274 100%  267.58kB/s    0:00:00 (xfr#20, to-chk=38/61)
+benchmark-scripts/general-helper.sh
+            976 100%  476.56kB/s    0:00:00              976 100%  476.56kB/s    0:00:00 (xfr#21, to-chk=37/61)
+benchmark-scripts/install-cassandra.sh
+            543 100%  265.14kB/s    0:00:00              543 100%  265.14kB/s    0:00:00 (xfr#22, to-chk=36/61)
+benchmark-scripts/install-mysql.sh
+            461 100%  225.10kB/s    0:00:00              461 100%  225.10kB/s    0:00:00 (xfr#23, to-chk=35/61)
+benchmark-scripts/lamptest.sh
+            321 100%  156.74kB/s    0:00:00              321 100%  156.74kB/s    0:00:00 (xfr#24, to-chk=33/61)
+benchmark-scripts/mem-usage.sh
+            129 100%   62.99kB/s    0:00:00              129 100%   62.99kB/s    0:00:00 (xfr#25, to-chk=32/61)
+benchmark-scripts/memcached-debug-memtier.sh
+            348 100%  169.92kB/s    0:00:00              348 100%  169.92kB/s    0:00:00 (xfr#26, to-chk=31/61)
+benchmark-scripts/memcached-make-test.sh
+            256 100%  125.00kB/s    0:00:00              256 100%  125.00kB/s    0:00:00 (xfr#27, to-chk=30/61)
+benchmark-scripts/memcached-test.sh
+            152 100%   74.22kB/s    0:00:00              152 100%   74.22kB/s    0:00:00 (xfr#28, to-chk=29/61)
+benchmark-scripts/memcached.sh
+            313 100%  152.83kB/s    0:00:00              313 100%  152.83kB/s    0:00:00 (xfr#29, to-chk=28/61)
+benchmark-scripts/mysql-bench.sh
+            483 100%  235.84kB/s    0:00:00              483 100%  235.84kB/s    0:00:00 (xfr#30, to-chk=26/61)
+benchmark-scripts/mysql-make-test.sh
+            454 100%  221.68kB/s    0:00:00              454 100%  221.68kB/s    0:00:00 (xfr#31, to-chk=25/61)
+benchmark-scripts/mysql-test.sh
+            336 100%  164.06kB/s    0:00:00              336 100%  164.06kB/s    0:00:00 (xfr#32, to-chk=24/61)
+benchmark-scripts/mysql.sh
+            362 100%  176.76kB/s    0:00:00              362 100%  176.76kB/s    0:00:00 (xfr#33, to-chk=23/61)
+benchmark-scripts/nginx-bench.sh
+            348 100%  169.92kB/s    0:00:00              348 100%  169.92kB/s    0:00:00 (xfr#34, to-chk=22/61)
+benchmark-scripts/nginx-make-test.sh
+            293 100%  143.07kB/s    0:00:00              293 100%  143.07kB/s    0:00:00 (xfr#35, to-chk=21/61)
+benchmark-scripts/nginx-test.sh
+            219 100%   71.29kB/s    0:00:00              219 100%   71.29kB/s    0:00:00 (xfr#36, to-chk=20/61)
+benchmark-scripts/nginx.sh
+            252 100%   82.03kB/s    0:00:00              252 100%   82.03kB/s    0:00:00 (xfr#37, to-chk=19/61)
+benchmark-scripts/perf.sh
+             69 100%   22.46kB/s    0:00:00               69 100%   22.46kB/s    0:00:00 (xfr#38, to-chk=18/61)
+benchmark-scripts/php-bench.sh
+            400 100%  130.21kB/s    0:00:00              400 100%  130.21kB/s    0:00:00 (xfr#39, to-chk=17/61)
+benchmark-scripts/php-make-test.sh
+            329 100%  107.10kB/s    0:00:00              329 100%  107.10kB/s    0:00:00 (xfr#40, to-chk=16/61)
+benchmark-scripts/php-test.sh
+            171 100%   55.66kB/s    0:00:00              171 100%   55.66kB/s    0:00:00 (xfr#41, to-chk=15/61)
+benchmark-scripts/php.sh
+            215 100%   69.99kB/s    0:00:00              215 100%   69.99kB/s    0:00:00 (xfr#42, to-chk=14/61)
+benchmark-scripts/redis-aggr.sh
+            306 100%   99.61kB/s    0:00:00              306 100%   99.61kB/s    0:00:00 (xfr#43, to-chk=12/61)
+benchmark-scripts/redis-bench.sh
+            885 100%  288.09kB/s    0:00:00              885 100%  288.09kB/s    0:00:00 (xfr#44, to-chk=11/61)
+benchmark-scripts/redis-cluster.sh
+            230 100%   74.87kB/s    0:00:00              230 100%   74.87kB/s    0:00:00 (xfr#45, to-chk=10/61)
+benchmark-scripts/redis-make-test-sentinel.sh
+            226 100%   73.57kB/s    0:00:00              226 100%   73.57kB/s    0:00:00 (xfr#46, to-chk=9/61)
+benchmark-scripts/redis-make-test.sh
+            218 100%   70.96kB/s    0:00:00              218 100%   70.96kB/s    0:00:00 (xfr#47, to-chk=8/61)
+benchmark-scripts/redis-sen.sh
+            254 100%   82.68kB/s    0:00:00              254 100%   82.68kB/s    0:00:00 (xfr#48, to-chk=7/61)
+benchmark-scripts/redis-sent.sh
+            253 100%   82.36kB/s    0:00:00              253 100%   82.36kB/s    0:00:00 (xfr#49, to-chk=6/61)
+benchmark-scripts/redis-test.sh
+            216 100%   70.31kB/s    0:00:00              216 100%   70.31kB/s    0:00:00 (xfr#50, to-chk=5/61)
+benchmark-scripts/redis.sh
+            264 100%   64.45kB/s    0:00:00              264 100%   64.45kB/s    0:00:00 (xfr#51, to-chk=4/61)
+benchmark-scripts/setup-test.sh
+          6.87K 100%    1.64MB/s    0:00:00            6.87K 100%    1.64MB/s    0:00:00 (xfr#52, to-chk=3/61)
+benchmark-scripts/stream.sh
+             70 100%   17.09kB/s    0:00:00               70 100%   17.09kB/s    0:00:00 (xfr#53, to-chk=2/61)
+benchmark-scripts/unixbench.sh
+            175 100%   42.72kB/s    0:00:00              175 100%   42.72kB/s    0:00:00 (xfr#54, to-chk=0/61)
+
+sent 20.31K bytes  received 1.05K bytes  42.71K bytes/sec
+total size is 5.90M  speedup is 276.25
+make[1]: Leaving directory '/Cozart'
+Benchmark mysql on cozarted kernel
+Benchmark mysql on base kernel

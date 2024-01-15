@@ -1,0 +1,1475 @@
+c[?7l[2J[0mSeaBIOS (version rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org)
+
+
+iPXE (http://ipxe.org) 00:03.0 C980 PCI2.10 PnP PMM+BFF914D0+BFEF14D0 C980
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..c[?7l[2J[0m.[    0.000000] Linux version 4.18.20-linux-cosmic-cosmic-base (root@80a77f26ef0f) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #1 SMP Tue Jan 9 11:20:01 UTC 2024 (Ubuntu 4.18.0-15.16-generic 4.18.20)
+[    0.000000] Command line: panic=-1 console=ttyS0 root=/dev/sda rw init=/benchmark-scripts/nginx.sh
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: x87 FPU will use FXSAVE
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000bffdefff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000bffdf000-0x00000000bfffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000023fffffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.8 present.
+[    0.000000] DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] AGP: No AGP bridge found
+[    0.000000] last_pfn = 0x240000 max_arch_pfn = 0x400000000
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WC  UC- UC  
+[    0.000000] last_pfn = 0xbffdf max_arch_pfn = 0x400000000
+[    0.000000] found SMP MP-table at [mem 0x000f5b40-0x000f5b4f] mapped at [(____ptrval____)]
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000F5AF0 000014 (v00 BOCHS )
+[    0.000000] ACPI: RSDT 0x00000000BFFE13D2 000030 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: FACP 0x00000000BFFE1296 000074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x00000000BFFDFD80 001516 (v01 BOCHS  BXPCDSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: FACS 0x00000000BFFDFD40 000040
+[    0.000000] ACPI: APIC 0x00000000BFFE130A 000090 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+[    0.000000] ACPI: HPET 0x00000000BFFE139A 000038 (v01 BOCHS  BXPCHPET 00000001 BXPC 00000001)
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000023fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x23ffd1000-0x23fffbfff]
+[    0.000000] kvm-clock: cpu 0, msr 2:3ff50001, primary cpu clock
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: using sched offset of 445859074 cycles
+[    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000023fffffff]
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x00000000bffdefff]
+[    0.000000]   node   0: [mem 0x0000000100000000-0x000000023fffffff]
+[    0.000000] Reserved but unavailable: 131 pages
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000023fffffff]
+[    0.000000] ACPI: PM-Timer IO Port: 0x608
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    0.000000] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xbffdf000-0xbfffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xc0000000-0xfeffbfff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfeffc000-0xfeffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xff000000-0xfffbffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+[    0.000000] [mem 0xc0000000-0xfeffbfff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on KVM
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.000000] random: get_random_bytes called from start_kernel+0x99/0x55a with crng_init=0
+[    0.000000] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+[    0.000000] percpu: Embedded 46 pages/cpu @(____ptrval____) s151552 r8192 d28672 u524288
+[    0.000000] KVM setup async PF for cpu 0
+[    0.000000] kvm-stealtime: cpu 0, msr 23fc24040
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 2064232
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: panic=-1 console=ttyS0 root=/dev/sda rw init=/benchmark-scripts/nginx.sh
+[    0.000000] AGP: Checking aperture...
+[    0.000000] AGP: No AGP bridge found
+[    0.000000] Memory: 8159340K/8388084K available (14348K kernel code, 2634K rwdata, 4184K rodata, 2464K init, 2340K bss, 228744K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Kernel/User page tables isolation: enabled
+[    0.000000] ftrace: allocating 40752 entries in 160 pages
+[    0.004000] Hierarchical RCU implementation.
+[    0.004000] 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=4.
+[    0.004000] 	Tasks RCU enabled.
+[    0.004000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.004000] NR_IRQS: 524544, nr_irqs: 456, preallocated irqs: 16
+[    0.004000] Console: colour VGA+ 80x25
+[    0.004000] console [ttyS0] enabled
+[    0.004000] ACPI: Core revision 20180531
+[    0.004000] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.004008] APIC: Switch to symmetric I/O mode setup
+[    0.005381] x2apic enabled
+[    0.006342] Switched APIC routing to physical x2apic.
+[    0.008876] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.010131] tsc: Detected 2095.078 MHz processor
+[    0.011058] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1e3306b9ada, max_idle_ns: 440795224413 ns
+[    0.012004] Calibrating delay loop (skipped) preset value.. 4190.15 BogoMIPS (lpj=8380312)
+[    0.013663] pid_max: default: 32768 minimum: 301
+[    0.014628] Security Framework initialized
+[    0.016003] Yama: becoming mindful.
+[    0.016730] AppArmor: AppArmor initialized
+[    0.021719] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[    0.024919] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.026407] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.027812] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.028322] mce: CPU supports 10 MCE banks
+[    0.029232] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.030297] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.032004] Spectre V2 : Mitigation: Full generic retpoline
+[    0.033129] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.034775] Speculative Store Bypass: Vulnerable
+[    0.036070] MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+[    0.037586] Freeing SMP alternatives memory: 36K
+[    0.044000] smpboot: CPU0: Intel Common KVM processor (family: 0xf, model: 0x6, stepping: 0x1)
+[    0.044000] Performance Events: unsupported Netburst CPU model 6 no PMU driver, software events only.
+[    0.044022] Hierarchical SRCU implementation.
+[    0.046045] NMI watchdog: Perf event create on CPU 0 failed with -2
+[    0.047310] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.048071] smp: Bringing up secondary CPUs ...
+[    0.049100] x86: Booting SMP configuration:
+[    0.049951] .... node  #0, CPUs:      #1
+[    0.004000] kvm-clock: cpu 1, msr 2:3ff50041, secondary cpu clock
+[    0.072111] KVM setup async PF for cpu 1
+[    0.074497] kvm-stealtime: cpu 1, msr 23fca4040
+[    0.076122]  #2
+[    0.004000] kvm-clock: cpu 2, msr 2:3ff50081, secondary cpu clock
+[    0.096105] KVM setup async PF for cpu 2
+[    0.098482] kvm-stealtime: cpu 2, msr 23fd24040
+[    0.100115]  #3
+[    0.004000] kvm-clock: cpu 3, msr 2:3ff500c1, secondary cpu clock
+[    0.120094] KVM setup async PF for cpu 3
+[    0.122488] kvm-stealtime: cpu 3, msr 23fda4040
+[    0.128023] smp: Brought up 1 node, 4 CPUs
+[    0.128867] smpboot: Max logical packages: 4
+[    0.129734] smpboot: Total of 4 processors activated (16760.62 BogoMIPS)
+[    0.132548] devtmpfs: initialized
+[    0.132759] x86/mm: Memory block size: 128MB
+[    0.134455] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.136011] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.137336] pinctrl core: initialized pinctrl subsystem
+[    0.140184] RTC time: 12:16:12, date: 01/15/24
+[    0.141321] NET: Registered protocol family 16
+[    0.142332] audit: initializing netlink subsys (disabled)
+[    0.143445] audit: type=2000 audit(1705320972.108:1): state=initialized audit_enabled=0 res=1
+[    0.148021] cpuidle: using governor ladder
+[    0.148867] cpuidle: using governor menu
+[    0.149837] ACPI: bus type PCI registered
+[    0.150656] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.152193] PCI: Using configuration type 1 for base access
+[    0.156054] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.157431] ACPI: Added _OSI(Module Device)
+[    0.157431] ACPI: Added _OSI(Processor Device)
+[    0.157858] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.160003] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.161102] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.162000] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.165364] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.168310] ACPI: Interpreter enabled
+[    0.169098] ACPI: (supports S0 S3 S4 S5)
+[    0.169894] ACPI: Using IOAPIC for interrupt routing
+[    0.170908] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.172175] ACPI: Enabled 2 GPEs in block 00 to 0F
+[    0.178768] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.180007] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+[    0.181403] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+[    0.182744] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    0.184466] acpiphp: Slot [3] registered
+[    0.185316] acpiphp: Slot [4] registered
+[    0.186158] acpiphp: Slot [5] registered
+[    0.188049] acpiphp: Slot [6] registered
+[    0.188895] acpiphp: Slot [7] registered
+[    0.189755] acpiphp: Slot [8] registered
+[    0.190599] acpiphp: Slot [9] registered
+[    0.191442] acpiphp: Slot [10] registered
+[    0.192049] acpiphp: Slot [11] registered
+[    0.192916] acpiphp: Slot [12] registered
+[    0.193776] acpiphp: Slot [13] registered
+[    0.194636] acpiphp: Slot [14] registered
+[    0.195496] acpiphp: Slot [15] registered
+[    0.196048] acpiphp: Slot [16] registered
+[    0.196914] acpiphp: Slot [17] registered
+[    0.197771] acpiphp: Slot [18] registered
+[    0.198628] acpiphp: Slot [19] registered
+[    0.200049] acpiphp: Slot [20] registered
+[    0.200907] acpiphp: Slot [21] registered
+[    0.201773] acpiphp: Slot [22] registered
+[    0.202633] acpiphp: Slot [23] registered
+[    0.203490] acpiphp: Slot [24] registered
+[    0.204049] acpiphp: Slot [25] registered
+[    0.204923] acpiphp: Slot [26] registered
+[    0.205781] acpiphp: Slot [27] registered
+[    0.206638] acpiphp: Slot [28] registered
+[    0.207501] acpiphp: Slot [29] registered
+[    0.208048] acpiphp: Slot [30] registered
+[    0.208916] acpiphp: Slot [31] registered
+[    0.209741] PCI host bridge to bus 0000:00
+[    0.210569] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.212003] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.213371] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.214892] pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+[    0.216003] pci_bus 0000:00: root bus resource [mem 0x240000000-0x2bfffffff window]
+[    0.217542] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.226656] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.228003] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.230296] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.231716] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.232923] pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+[    0.234385] pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+[    0.270435] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+[    0.271782] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+[    0.272175] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+[    0.273541] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+[    0.274769] ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+[    0.276901] SCSI subsystem initialized
+[    0.277796] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.277796] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.280005] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.281164] vgaarb: loaded
+[    0.281754] ACPI: bus type USB registered
+[    0.284028] usbcore: registered new interface driver usbfs
+[    0.285152] usbcore: registered new interface driver hub
+[    0.286246] usbcore: registered new device driver usb
+[    0.287289] pps_core: LinuxPPS API ver. 1 registered
+[    0.288002] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.289833] PTP clock support registered
+[    0.290677] EDAC MC: Ver: 3.0.0
+[    0.292123] PCI: Using ACPI for IRQ routing
+[    0.293281] NetLabel: Initializing
+[    0.293980] NetLabel:  domain hash size = 128
+[    0.294859] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.296027] NetLabel:  unlabeled traffic allowed by default
+[    0.297174] HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+[    0.297540] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    0.300004] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+[    0.305097] clocksource: Switched to clocksource kvm-clock
+[    0.319683] VFS: Disk quotas dquot_6.6.0
+[    0.320532] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.322638] AppArmor: AppArmor Filesystem Enabled
+[    0.323635] pnp: PnP ACPI init
+[    0.324934] pnp: PnP ACPI: found 6 devices
+[    0.334279] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.336211] NET: Registered protocol family 2
+[    0.337973] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes)
+[    0.339593] TCP established hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.341165] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[    0.342609] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.343981] UDP hash table entries: 4096 (order: 5, 131072 bytes)
+[    0.345810] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes)
+[    0.347206] NET: Registered protocol family 1
+[    0.348110] NET: Registered protocol family 44
+[    0.349011] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.350211] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    0.351399] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.352708] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.354467] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.355771] software IO TLB [mem 0xbbfdf000-0xbffdf000] (64MB) mapped at [(____ptrval____)-(____ptrval____)]
+[    0.357787] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1e3306b9ada, max_idle_ns: 440795224413 ns
+[    0.359828] Scanning for low memory corruption every 60 seconds
+[    0.361727] Initialise system trusted keyrings
+[    0.362654] Key type blacklist registered
+[    0.363575] workingset: timestamp_bits=36 max_order=21 bucket_order=0
+[    0.366390] zbud: loaded
+[    0.367598] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.369072] fuse init (API version 7.27)
+[    0.369979] pstore: using deflate compression
+[    0.374464] Key type asymmetric registered
+[    0.375326] Asymmetric key parser 'x509' registered
+[    0.376365] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+[    0.377930] io scheduler noop registered
+[    0.378730] io scheduler deadline registered
+[    0.379637] io scheduler cfq registered (default)
+[    0.380833] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.382333] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    0.383845] ACPI: Power Button [PWRF]
+[    0.385038] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.412265] 00:05: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.416482] Linux agpgart interface v0.103
+[    0.419898] loop: module loaded
+[    0.422300] scsi host0: ata_piix
+[    0.423168] scsi host1: ata_piix
+[    0.423863] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc040 irq 14
+[    0.425230] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc048 irq 15
+[    0.426727] libphy: Fixed MDIO Bus: probed
+[    0.427676] tun: Universal TUN/TAP device driver, 1.6
+[    0.428885] PPP generic driver version 2.4.2
+[    0.429826] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.431151] ehci-pci: EHCI PCI platform driver
+[    0.432077] ehci-platform: EHCI generic platform driver
+[    0.433133] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.434375] ohci-pci: OHCI PCI platform driver
+[    0.435289] ohci-platform: OHCI generic platform driver
+[    0.436356] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.437679] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[    0.440221] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.441236] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.442452] mousedev: PS/2 mouse device common for all mice
+[    0.445033] rtc_cmos 00:00: RTC can wake from S4
+[    0.446713] rtc_cmos 00:00: registered as rtc0
+[    0.447672] rtc_cmos 00:00: alarms up to one day, y3k, 114 bytes nvram, hpet irqs
+[    0.449187] i2c /dev entries driver
+[    0.449962] device-mapper: uevent: version 1.0.3
+[    0.451081] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+[    0.452889] device-mapper: ioctl: 4.39.0-ioctl (2018-04-03) initialised: dm-devel@redhat.com
+[    0.458260] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.463201] NET: Registered protocol family 10
+[    0.467699] Segment Routing with IPv6
+[    0.470015] NET: Registered protocol family 17
+[    0.472958] Key type dns_resolver registered
+[    0.476406] RAS: Correctable Errors collector initialized.
+[    0.479790] sched_clock: Marking stable (476271438, 0)->(1062724353, -586452915)
+[    0.485157] registered taskstats version 1
+[    0.487702] Loading compiled-in X.509 certificates
+[    0.493086] Loaded X.509 cert 'Build time autogenerated kernel key: 1c2f1b3729eaf9d5675161492f0e930109267547'
+[    0.499117] zswap: loaded using pool lzo/zbud
+[    0.502291] Key type big_key registered
+[    0.503104] Key type trusted registered
+[    0.504204] Key type encrypted registered
+[    0.505023] AppArmor: AppArmor sha1 policy hashing enabled
+[    0.506142] ima: No TPM chip found, activating TPM-bypass! (rc=-19)
+[    0.507411] ima: Allocated hash algorithm: sha1
+[    0.508361] evm: Initialising EVM extended attributes:
+[    0.509394] evm: security.selinux
+[    0.510066] evm: security.SMACK64
+[    0.510738] evm: security.SMACK64EXEC
+[    0.511488] evm: security.SMACK64TRANSMUTE
+[    0.512326] evm: security.SMACK64MMAP
+[    0.513067] evm: security.apparmor
+[    0.513756] evm: security.ima
+[    0.514360] evm: security.capability
+[    0.515088] evm: HMAC attrs: 0x1
+[    0.516038]   Magic number: 8:88:279
+[    0.516783] event_source tracepoint: hash matches
+[    0.517739] tty tty16: hash matches
+[    0.518612] rtc_cmos 00:00: setting system clock to 2024-01-15 12:16:12 UTC (1705320972)
+[    0.586290] ata1.00: ATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+[    0.589833] ata1.00: 41943040 sectors, multi 16: LBA48 
+[    0.596371] ata2.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[    0.596700] scsi 0:0:0:0: Direct-Access     ATA      QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+[    0.605683] sd 0:0:0:0: [sda] 41943040 512-byte logical blocks: (21.5 GB/20.0 GiB)
+[    0.605691] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    0.610314] sd 0:0:0:0: [sda] Write Protect is off
+[    0.617437] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    0.622911] scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+[    0.630071] sd 0:0:0:0: [sda] Attached SCSI disk
+[    0.661805] sr 1:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[    0.665891] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    0.669613] sr 1:0:0:0: Attached scsi generic sg1 type 5
+[    0.673314] md: Waiting for all devices to be available before autodetect
+[    0.677471] md: If you don't use raid, use raid=noautodetect
+[    0.681383] md: Autodetecting RAID arrays.
+[    0.683906] md: autorun ...
+[    0.685658] md: ... autorun DONE.
+[    0.819204] EXT4-fs (sda): recovery complete
+[    0.836551] EXT4-fs (sda): mounted filesystem with ordered data mode. Opts: (null)
+[    0.841182] VFS: Mounted root (ext4 filesystem) on device 8:0.
+[    0.845464] devtmpfs: mounted
+[    0.860513] Freeing unused kernel image memory: 2464K
+[    0.876061] Write protecting the kernel read-only data: 22528k
+[    0.884912] Freeing unused kernel image memory: 2008K
+[    0.889353] Freeing unused kernel image memory: 1960K
+[    0.922369] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    0.924658] x86/mm: Checking user space page tables
+[    0.944237] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.293940] random: fast init done
+[    5.875003] random: crng init done
+[    9.565747] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    9.569332] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    9.623170] PCI Interrupt Link [LNKC] enabled at IRQ 11
+[   10.019994] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[   10.021430] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[   10.044158] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   12.060965] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   12.066815] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+haveged: haveged starting up
+ptr: 0x333333333000
+ * Starting nginx nginx       [80G [74G[ OK ]
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.908 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14475.10 [#/sec] (mean)
+Time per request:       6.908 [ms] (mean)
+Time per request:       0.069 [ms] (mean, across all concurrent requests)
+Transfer rate:          157798.43 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.8      2      11
+Processing:     1    5   1.3      4      24
+Waiting:        1    2   0.9      2      20
+Total:          3    7   1.9      6      28
+
+Percentage of the requests served within a certain time (ms)
+  50%      6
+  66%      7
+  75%      7
+  80%      7
+  90%      8
+  95%     10
+  98%     14
+  99%     17
+ 100%     28 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.788 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14732.74 [#/sec] (mean)
+Time per request:       6.788 [ms] (mean)
+Time per request:       0.068 [ms] (mean, across all concurrent requests)
+Transfer rate:          160607.00 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.8      2      36
+Processing:     1    5   1.7      5      57
+Waiting:        0    2   1.5      3      57
+Total:          1    7   2.0      7      59
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      7
+  98%     10
+  99%     15
+ 100%     59 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.579 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    15198.83 [#/sec] (mean)
+Time per request:       6.579 [ms] (mean)
+Time per request:       0.066 [ms] (mean, across all concurrent requests)
+Transfer rate:          165688.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.6      2       9
+Processing:     1    4   1.1      4      16
+Waiting:        0    2   0.7      2      10
+Total:          2    7   1.5      6      22
+
+Percentage of the requests served within a certain time (ms)
+  50%      6
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      8
+  98%     12
+  99%     15
+ 100%     22 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.800 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14706.28 [#/sec] (mean)
+Time per request:       6.800 [ms] (mean)
+Time per request:       0.068 [ms] (mean, across all concurrent requests)
+Transfer rate:          160318.54 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.7      2      10
+Processing:     1    5   1.1      4      21
+Waiting:        0    2   0.8      2      17
+Total:          4    7   1.6      7      25
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      8
+  98%     12
+  99%     17
+ 100%     25 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.325 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    15811.35 [#/sec] (mean)
+Time per request:       6.325 [ms] (mean)
+Time per request:       0.063 [ms] (mean, across all concurrent requests)
+Transfer rate:          172365.32 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.5      2      11
+Processing:     1    4   0.6      4      15
+Waiting:        0    2   0.5      2       9
+Total:          4    6   0.9      6      19
+
+Percentage of the requests served within a certain time (ms)
+  50%      6
+  66%      6
+  75%      6
+  80%      7
+  90%      7
+  95%      7
+  98%      8
+  99%      9
+ 100%     19 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.313 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    15841.16 [#/sec] (mean)
+Time per request:       6.313 [ms] (mean)
+Time per request:       0.063 [ms] (mean, across all concurrent requests)
+Transfer rate:          172690.25 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.5      2       9
+Processing:     1    4   0.9      4      25
+Waiting:        1    2   0.7      2      22
+Total:          4    6   1.1      6      26
+
+Percentage of the requests served within a certain time (ms)
+  50%      6
+  66%      6
+  75%      6
+  80%      6
+  90%      7
+  95%      7
+  98%      9
+  99%     11
+ 100%     26 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.154 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    16249.12 [#/sec] (mean)
+Time per request:       6.154 [ms] (mean)
+Time per request:       0.062 [ms] (mean, across all concurrent requests)
+Transfer rate:          177137.66 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.4      2      14
+Processing:     1    4   0.7      4      20
+Waiting:        0    2   0.6      2      13
+Total:          3    6   1.0      6      26
+
+Percentage of the requests served within a certain time (ms)
+  50%      6
+  66%      6
+  75%      6
+  80%      6
+  90%      6
+  95%      7
+  98%      8
+  99%      9
+ 100%     26 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.849 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14600.02 [#/sec] (mean)
+Time per request:       6.849 [ms] (mean)
+Time per request:       0.068 [ms] (mean, across all concurrent requests)
+Transfer rate:          159160.22 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.7      2       9
+Processing:     1    5   1.2      4      26
+Waiting:        0    2   0.8      2      22
+Total:          3    7   1.6      7      29
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      8
+  98%     13
+  99%     17
+ 100%     29 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.445 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    15517.01 [#/sec] (mean)
+Time per request:       6.445 [ms] (mean)
+Time per request:       0.064 [ms] (mean, across all concurrent requests)
+Transfer rate:          169156.59 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.7      2      27
+Processing:     2    4   1.2      4      29
+Waiting:        0    2   0.8      2      27
+Total:          3    6   1.5      6      31
+
+Percentage of the requests served within a certain time (ms)
+  50%      6
+  66%      6
+  75%      6
+  80%      7
+  90%      7
+  95%      7
+  98%     10
+  99%     14
+ 100%     31 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.719 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14883.10 [#/sec] (mean)
+Time per request:       6.719 [ms] (mean)
+Time per request:       0.067 [ms] (mean, across all concurrent requests)
+Transfer rate:          162246.12 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.5      2       9
+Processing:     1    4   0.9      4      23
+Waiting:        0    2   0.7      2      19
+Total:          3    7   1.1      7      27
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      7
+  98%      9
+  99%     12
+ 100%     27 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.626 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    15092.23 [#/sec] (mean)
+Time per request:       6.626 [ms] (mean)
+Time per request:       0.066 [ms] (mean, across all concurrent requests)
+Transfer rate:          164525.92 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.5      2       9
+Processing:     1    4   0.9      4      18
+Waiting:        0    2   0.7      2      14
+Total:          2    7   1.3      7      20
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      7
+  98%     11
+  99%     14
+ 100%     20 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.693 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14940.40 [#/sec] (mean)
+Time per request:       6.693 [ms] (mean)
+Time per request:       0.067 [ms] (mean, across all concurrent requests)
+Transfer rate:          162870.74 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.6      2      10
+Processing:     1    4   1.0      4      20
+Waiting:        0    2   0.7      2      18
+Total:          3    7   1.4      6      22
+
+Percentage of the requests served within a certain time (ms)
+  50%      6
+  66%      7
+  75%      7
+  80%      7
+  90%      8
+  95%      8
+  98%     11
+  99%     14
+ 100%     22 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.937 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14416.47 [#/sec] (mean)
+Time per request:       6.937 [ms] (mean)
+Time per request:       0.069 [ms] (mean, across all concurrent requests)
+Transfer rate:          157159.27 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.7      2      19
+Processing:     1    5   1.1      5      26
+Waiting:        0    2   0.8      2      21
+Total:          3    7   1.5      7      31
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      8
+  98%     11
+  99%     15
+ 100%     31 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.903 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14487.45 [#/sec] (mean)
+Time per request:       6.903 [ms] (mean)
+Time per request:       0.069 [ms] (mean, across all concurrent requests)
+Transfer rate:          157933.01 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.7      2      11
+Processing:     1    5   1.2      4      17
+Waiting:        1    2   0.7      2      13
+Total:          3    7   1.8      6      21
+
+Percentage of the requests served within a certain time (ms)
+  50%      6
+  66%      7
+  75%      7
+  80%      7
+  90%      8
+  95%     10
+  98%     14
+  99%     17
+ 100%     21 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   7.022 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14241.61 [#/sec] (mean)
+Time per request:       7.022 [ms] (mean)
+Time per request:       0.070 [ms] (mean, across all concurrent requests)
+Transfer rate:          155252.98 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.5      2      11
+Processing:     2    5   1.0      5      35
+Waiting:        1    3   0.8      3      31
+Total:          4    7   1.3      7      39
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      8
+  98%      9
+  99%     13
+ 100%     39 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   7.037 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14209.61 [#/sec] (mean)
+Time per request:       7.037 [ms] (mean)
+Time per request:       0.070 [ms] (mean, across all concurrent requests)
+Transfer rate:          154904.22 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.6      2      17
+Processing:     1    5   0.8      5      20
+Waiting:        0    2   0.7      2      17
+Total:          4    7   0.9      7      22
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      8
+  98%      8
+  99%      9
+ 100%     22 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   7.191 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    13906.10 [#/sec] (mean)
+Time per request:       7.191 [ms] (mean)
+Time per request:       0.072 [ms] (mean, across all concurrent requests)
+Transfer rate:          151595.52 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.7      2      10
+Processing:     1    5   1.1      5      22
+Waiting:        0    2   0.8      2      18
+Total:          3    7   1.4      7      26
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      8
+  90%      8
+  95%      8
+  98%     12
+  99%     15
+ 100%     26 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.532 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    15309.97 [#/sec] (mean)
+Time per request:       6.532 [ms] (mean)
+Time per request:       0.065 [ms] (mean, across all concurrent requests)
+Transfer rate:          166899.64 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.6      2      10
+Processing:     2    4   1.1      4      32
+Waiting:        0    2   0.8      2      30
+Total:          4    7   1.5      6      34
+
+Percentage of the requests served within a certain time (ms)
+  50%      6
+  66%      6
+  75%      7
+  80%      7
+  90%      7
+  95%      8
+  98%     11
+  99%     15
+ 100%     34 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.924 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14442.17 [#/sec] (mean)
+Time per request:       6.924 [ms] (mean)
+Time per request:       0.069 [ms] (mean, across all concurrent requests)
+Transfer rate:          157439.45 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.8      2      11
+Processing:     1    5   1.3      4      24
+Waiting:        0    2   0.9      2      22
+Total:          2    7   1.8      7      28
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      9
+  98%     15
+  99%     17
+ 100%     28 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        10918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   6.707 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      1116300000 bytes
+HTML transferred:       1091800000 bytes
+Requests per second:    14909.20 [#/sec] (mean)
+Time per request:       6.707 [ms] (mean)
+Time per request:       0.067 [ms] (mean, across all concurrent requests)
+Transfer rate:          162530.62 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.5      2       9
+Processing:     1    4   0.8      4      25
+Waiting:        0    2   0.8      2      23
+Total:          3    7   0.9      7      25
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      7
+  75%      7
+  80%      7
+  90%      7
+  95%      7
+  98%      8
+  99%     10
+ 100%     25 (longest request)
+ * Stopping nginx nginx       [80G [74G[ OK ]
+ptr: 0x222222222000
+[  163.666412] Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000000
+[  163.666412] 
+[  163.672032] CPU: 1 PID: 1 Comm: nginx.sh Not tainted 4.18.20-linux-cosmic-cosmic-base #1
+[  163.676918] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  163.684135] Call Trace:
+[  163.685741]  dump_stack+0x63/0x85
+[  163.687771]  panic+0xe4/0x244
+[  163.689612]  do_exit+0xb30/0xb30
+[  163.691601]  do_group_exit+0x43/0xb0
+[  163.693813]  __x64_sys_exit_group+0x18/0x20
+[  163.696391]  do_syscall_64+0x5a/0x120
+[  163.698639]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[  163.701720] RIP: 0033:0x7f15267e7946
+[  163.703887] Code: Bad RIP value.
+[  163.705905] RSP: 002b:00007fffca7e70f8 EFLAGS: 00000246 ORIG_RAX: 00000000000000e7
+[  163.710322] RAX: ffffffffffffffda RBX: 00007f15268e9760 RCX: 00007f15267e7946
+[  163.714037] RDX: 0000000000000000 RSI: 000000000000003c RDI: 0000000000000000
+[  163.717464] RBP: 0000000000000000 R08: 00000000000000e7 R09: ffffffffffffff80
+[  163.720563] R10: 00007fffca7e6faa R11: 0000000000000246 R12: 00007f15268e9760
+[  163.723485] R13: 0000000000000001 R14: 00007f15268f2428 R15: 0000000000000000
+[  163.726597] Kernel Offset: 0x5c00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
