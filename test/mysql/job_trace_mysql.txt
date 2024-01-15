@@ -1,0 +1,191 @@
+sed -i 's/reqcnt=.*/reqcnt=5000/' benchmark-scripts/*.sh
+sed -i 's/reqcnt=.*/reqcnt=500/' benchmark-scripts/*memcached.sh
+sed -i 's/reqcnt=.*/reqcnt=500/' benchmark-scripts/*cassandra.sh
+sed -i 's/itr=.*/itr=1/' benchmark-scripts/*.sh
+make sync-scripts
+make[1]: Entering directory '/Cozart'
+./copy2disks.sh benchmark-scripts
+umount: /Cozart/mnt: not mounted
+sending incremental file list
+benchmark-scripts/
+benchmark-scripts/apache-bench.sh
+            551 100%    0.00kB/s    0:00:00              551 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=57/61)
+benchmark-scripts/apache-make-test.sh
+            357 100%  348.63kB/s    0:00:00              357 100%  348.63kB/s    0:00:00 (xfr#2, to-chk=56/61)
+benchmark-scripts/apache-test.sh
+            198 100%  193.36kB/s    0:00:00              198 100%  193.36kB/s    0:00:00 (xfr#3, to-chk=55/61)
+benchmark-scripts/apache.sh
+            267 100%  260.74kB/s    0:00:00              267 100%  260.74kB/s    0:00:00 (xfr#4, to-chk=54/61)
+benchmark-scripts/boot-time.sh
+            366 100%  357.42kB/s    0:00:00              366 100%  357.42kB/s    0:00:00 (xfr#5, to-chk=53/61)
+benchmark-scripts/boot.sh
+            109 100%  106.45kB/s    0:00:00              109 100%  106.45kB/s    0:00:00 (xfr#6, to-chk=52/61)
+benchmark-scripts/cassandra.sh
+            552 100%  539.06kB/s    0:00:00              552 100%  539.06kB/s    0:00:00 (xfr#7, to-chk=51/61)
+benchmark-scripts/cgroupfs-mount.sh
+          1.28K 100%    1.22MB/s    0:00:00            1.28K 100%    1.22MB/s    0:00:00 (xfr#8, to-chk=50/61)
+benchmark-scripts/check-config.sh
+         10.31K 100%    9.84MB/s    0:00:00           10.31K 100%    9.84MB/s    0:00:00 (xfr#9, to-chk=49/61)
+benchmark-scripts/docker-apache.sh
+            385 100%  375.98kB/s    0:00:00              385 100%  375.98kB/s    0:00:00 (xfr#10, to-chk=48/61)
+benchmark-scripts/docker-cassandra.sh
+            667 100%  651.37kB/s    0:00:00              667 100%  651.37kB/s    0:00:00 (xfr#11, to-chk=47/61)
+benchmark-scripts/docker-hello.sh
+            258 100%  251.95kB/s    0:00:00              258 100%  251.95kB/s    0:00:00 (xfr#12, to-chk=46/61)
+benchmark-scripts/docker-helper.sh
+            244 100%  238.28kB/s    0:00:00              244 100%  238.28kB/s    0:00:00 (xfr#13, to-chk=45/61)
+benchmark-scripts/docker-install-images.sh
+            428 100%  417.97kB/s    0:00:00              428 100%  417.97kB/s    0:00:00 (xfr#14, to-chk=44/61)
+benchmark-scripts/docker-memcached.sh
+            466 100%  455.08kB/s    0:00:00              466 100%  455.08kB/s    0:00:00 (xfr#15, to-chk=43/61)
+benchmark-scripts/docker-mysql.sh
+            852 100%  832.03kB/s    0:00:00              852 100%  832.03kB/s    0:00:00 (xfr#16, to-chk=42/61)
+benchmark-scripts/docker-nginx.sh
+            385 100%  375.98kB/s    0:00:00              385 100%  375.98kB/s    0:00:00 (xfr#17, to-chk=41/61)
+benchmark-scripts/docker-php.sh
+            274 100%  267.58kB/s    0:00:00              274 100%  267.58kB/s    0:00:00 (xfr#18, to-chk=40/61)
+benchmark-scripts/docker-redis.sh
+            405 100%  395.51kB/s    0:00:00              405 100%  395.51kB/s    0:00:00 (xfr#19, to-chk=39/61)
+benchmark-scripts/docker-unixbench.sh
+            271 100%  264.65kB/s    0:00:00              271 100%  264.65kB/s    0:00:00 (xfr#20, to-chk=38/61)
+benchmark-scripts/general-helper.sh
+            976 100%  953.12kB/s    0:00:00              976 100%  953.12kB/s    0:00:00 (xfr#21, to-chk=37/61)
+benchmark-scripts/install-cassandra.sh
+            543 100%  530.27kB/s    0:00:00              543 100%  530.27kB/s    0:00:00 (xfr#22, to-chk=36/61)
+benchmark-scripts/install-mysql.sh
+            461 100%  450.20kB/s    0:00:00              461 100%  450.20kB/s    0:00:00 (xfr#23, to-chk=35/61)
+benchmark-scripts/lamptest.sh
+            318 100%  310.55kB/s    0:00:00              318 100%  310.55kB/s    0:00:00 (xfr#24, to-chk=33/61)
+benchmark-scripts/mem-usage.sh
+            129 100%  125.98kB/s    0:00:00              129 100%  125.98kB/s    0:00:00 (xfr#25, to-chk=32/61)
+benchmark-scripts/memcached-debug-memtier.sh
+            348 100%  339.84kB/s    0:00:00              348 100%  339.84kB/s    0:00:00 (xfr#26, to-chk=31/61)
+benchmark-scripts/memcached-make-test.sh
+            256 100%  125.00kB/s    0:00:00              256 100%  125.00kB/s    0:00:00 (xfr#27, to-chk=30/61)
+benchmark-scripts/memcached-test.sh
+            152 100%   74.22kB/s    0:00:00              152 100%   74.22kB/s    0:00:00 (xfr#28, to-chk=29/61)
+benchmark-scripts/memcached.sh
+            310 100%  151.37kB/s    0:00:00              310 100%  151.37kB/s    0:00:00 (xfr#29, to-chk=28/61)
+benchmark-scripts/mysql-bench.sh
+            480 100%  234.38kB/s    0:00:00              480 100%  234.38kB/s    0:00:00 (xfr#30, to-chk=26/61)
+benchmark-scripts/mysql-make-test.sh
+            454 100%  221.68kB/s    0:00:00              454 100%  221.68kB/s    0:00:00 (xfr#31, to-chk=25/61)
+benchmark-scripts/mysql-test.sh
+            336 100%  164.06kB/s    0:00:00              336 100%  164.06kB/s    0:00:00 (xfr#32, to-chk=24/61)
+benchmark-scripts/mysql.sh
+            359 100%  175.29kB/s    0:00:00              359 100%  175.29kB/s    0:00:00 (xfr#33, to-chk=23/61)
+benchmark-scripts/nginx-bench.sh
+            345 100%  168.46kB/s    0:00:00              345 100%  168.46kB/s    0:00:00 (xfr#34, to-chk=22/61)
+benchmark-scripts/nginx-make-test.sh
+            293 100%  143.07kB/s    0:00:00              293 100%  143.07kB/s    0:00:00 (xfr#35, to-chk=21/61)
+benchmark-scripts/nginx-test.sh
+            219 100%  106.93kB/s    0:00:00              219 100%  106.93kB/s    0:00:00 (xfr#36, to-chk=20/61)
+benchmark-scripts/nginx.sh
+            249 100%  121.58kB/s    0:00:00              249 100%  121.58kB/s    0:00:00 (xfr#37, to-chk=19/61)
+benchmark-scripts/perf.sh
+             69 100%   33.69kB/s    0:00:00               69 100%   33.69kB/s    0:00:00 (xfr#38, to-chk=18/61)
+benchmark-scripts/php-bench.sh
+            400 100%  195.31kB/s    0:00:00              400 100%  195.31kB/s    0:00:00 (xfr#39, to-chk=17/61)
+benchmark-scripts/php-make-test.sh
+            329 100%  160.64kB/s    0:00:00              329 100%  160.64kB/s    0:00:00 (xfr#40, to-chk=16/61)
+benchmark-scripts/php-test.sh
+            168 100%   82.03kB/s    0:00:00              168 100%   82.03kB/s    0:00:00 (xfr#41, to-chk=15/61)
+benchmark-scripts/php.sh
+            212 100%  103.52kB/s    0:00:00              212 100%  103.52kB/s    0:00:00 (xfr#42, to-chk=14/61)
+benchmark-scripts/redis-aggr.sh
+            306 100%  149.41kB/s    0:00:00              306 100%  149.41kB/s    0:00:00 (xfr#43, to-chk=12/61)
+benchmark-scripts/redis-bench.sh
+            882 100%  287.11kB/s    0:00:00              882 100%  287.11kB/s    0:00:00 (xfr#44, to-chk=11/61)
+benchmark-scripts/redis-cluster.sh
+            230 100%   74.87kB/s    0:00:00              230 100%   74.87kB/s    0:00:00 (xfr#45, to-chk=10/61)
+benchmark-scripts/redis-make-test-sentinel.sh
+            226 100%   73.57kB/s    0:00:00              226 100%   73.57kB/s    0:00:00 (xfr#46, to-chk=9/61)
+benchmark-scripts/redis-make-test.sh
+            218 100%   70.96kB/s    0:00:00              218 100%   70.96kB/s    0:00:00 (xfr#47, to-chk=8/61)
+benchmark-scripts/redis-sen.sh
+            254 100%   82.68kB/s    0:00:00              254 100%   82.68kB/s    0:00:00 (xfr#48, to-chk=7/61)
+benchmark-scripts/redis-sent.sh
+            253 100%   82.36kB/s    0:00:00              253 100%   82.36kB/s    0:00:00 (xfr#49, to-chk=6/61)
+benchmark-scripts/redis-test.sh
+            216 100%   70.31kB/s    0:00:00              216 100%   70.31kB/s    0:00:00 (xfr#50, to-chk=5/61)
+benchmark-scripts/redis.sh
+            261 100%   84.96kB/s    0:00:00              261 100%   84.96kB/s    0:00:00 (xfr#51, to-chk=4/61)
+benchmark-scripts/setup-test.sh
+          6.87K 100%    2.18MB/s    0:00:00            6.87K 100%    2.18MB/s    0:00:00 (xfr#52, to-chk=3/61)
+benchmark-scripts/stream.sh
+             70 100%   22.79kB/s    0:00:00               70 100%   22.79kB/s    0:00:00 (xfr#53, to-chk=2/61)
+benchmark-scripts/unixbench.sh
+            174 100%   56.64kB/s    0:00:00              174 100%   56.64kB/s    0:00:00 (xfr#54, to-chk=0/61)
+
+sent 20.30K bytes  received 1.05K bytes  42.70K bytes/sec
+total size is 5.90M  speedup is 276.34
+make[1]: Leaving directory '/Cozart'
+Tracing mysql
+rm -rf *.tmp
+Parsing LOCAL raw trace ...
+rm -rf *.tmp
+sudo umount --recursive /Cozart/mnt
+umount: /Cozart/mnt: not mounted
+Makefile:95: recipe for target 'get-modules' failed
+make: [get-modules] Error 1 (ignored)
+sudo mount -o loop /Cozart/qemu-disk.ext4 /Cozart/mnt
+sudo mv /Cozart/mnt/modules modules.tmp
+sudo chown root:root modules.tmp
+sudo umount --recursive /Cozart/mnt
+Getting module config information...
+Getting line information...
+Getting directive config information...
+Getting filename config information...
+Combining all configs...
+Including config dependencies
+init/Kconfig:24: warning: 'linux-cosmic/scripts/clang-version.sh ' wrote to stderr: linux-cosmic/scripts/clang-version.sh: 15: linux-cosmic/scripts/clang-version.sh: --version: not found
+arch/Kconfig:418: warning: 'linux-cosmic/scripts/gcc-plugin.sh "" "" ""' wrote to stderr: linux-cosmic/scripts/gcc-plugin.sh: 11: linux-cosmic/scripts/gcc-plugin.sh: -print-file-name=plugin: not found
+block/Kconfig:215: warning: style: quotes recommended around 'block/Kconfig.iosched' in 'source block/Kconfig.iosched'
+arch/x86/Kconfig:1969: warning: style: quotes recommended around 'kernel/Kconfig.hz' in 'source kernel/Kconfig.hz'
+warning: SCSI_DPT_I2O (defined at drivers/scsi/Kconfig:482) has leading or trailing whitespace in its prompt
+warning: ATM_FIRESTREAM (defined at drivers/atm/Kconfig:149) has leading or trailing whitespace in its prompt
+warning: IWLWIFI (defined at drivers/net/wireless/intel/iwlwifi/Kconfig:1) has leading or trailing whitespace in its prompt
+drivers/i2c/Kconfig:71: warning: style: quotes recommended around 'drivers/i2c/muxes/Kconfig' in 'source drivers/i2c/muxes/Kconfig'
+drivers/i2c/Kconfig:97: warning: style: quotes recommended around 'drivers/i2c/algos/Kconfig' in 'source drivers/i2c/algos/Kconfig'
+drivers/i2c/Kconfig:98: warning: style: quotes recommended around 'drivers/i2c/busses/Kconfig' in 'source drivers/i2c/busses/Kconfig'
+drivers/pps/Kconfig:40: warning: style: quotes recommended around 'drivers/pps/clients/Kconfig' in 'source drivers/pps/clients/Kconfig'
+drivers/pps/Kconfig:42: warning: style: quotes recommended around 'drivers/pps/generators/Kconfig' in 'source drivers/pps/generators/Kconfig'
+drivers/w1/Kconfig:28: warning: style: quotes recommended around 'drivers/w1/masters/Kconfig' in 'source drivers/w1/masters/Kconfig'
+drivers/w1/Kconfig:29: warning: style: quotes recommended around 'drivers/w1/slaves/Kconfig' in 'source drivers/w1/slaves/Kconfig'
+drivers/hwmon/Kconfig:1287: warning: style: quotes recommended around 'drivers/hwmon/pmbus/Kconfig' in 'source drivers/hwmon/pmbus/Kconfig'
+drivers/thermal/Kconfig:386: warning: style: quotes recommended around 'drivers/thermal/int340x_thermal/Kconfig' in 'source drivers/thermal/int340x_thermal/Kconfig'
+warning: REGULATOR_MAX8973 (defined at drivers/regulator/Kconfig:490) has leading or trailing whitespace in its prompt
+drivers/gpu/drm/i915/Kconfig:132: warning: style: quotes recommended around 'drivers/gpu/drm/i915/Kconfig.debug' in 'source drivers/gpu/drm/i915/Kconfig.debug'
+warning: MEMSTICK_TIFM_MS (defined at drivers/memstick/host/Kconfig:7) has leading or trailing whitespace in its prompt
+warning: MV_XOR_V2 (defined at drivers/dma/Kconfig:367) has leading or trailing whitespace in its prompt
+warning: PANEL_LCD_PIN_E (defined at drivers/auxdisplay/Kconfig:332) has leading or trailing whitespace in its prompt
+warning: PANEL_LCD_PIN_RS (defined at drivers/auxdisplay/Kconfig:347) has leading or trailing whitespace in its prompt
+warning: PANEL_LCD_PIN_RW (defined at drivers/auxdisplay/Kconfig:362) has leading or trailing whitespace in its prompt
+warning: PANEL_LCD_PIN_SCL (defined at drivers/auxdisplay/Kconfig:377) has leading or trailing whitespace in its prompt
+warning: PANEL_LCD_PIN_SDA (defined at drivers/auxdisplay/Kconfig:392) has leading or trailing whitespace in its prompt
+warning: PANEL_LCD_PIN_BL (defined at drivers/auxdisplay/Kconfig:407) has leading or trailing whitespace in its prompt
+drivers/ras/Kconfig:33: warning: style: quotes recommended around 'arch/x86/ras/Kconfig' in 'source arch/x86/ras/Kconfig'
+lib/Kconfig.debug:437: warning: style: quotes recommended around 'mm/Kconfig.debug' in 'source mm/Kconfig.debug'
+lib/Kconfig.debug:1607: warning: style: quotes recommended around 'kernel/trace/Kconfig' in 'source kernel/trace/Kconfig'
+security/Kconfig:7: warning: style: quotes recommended around 'security/keys/Kconfig' in 'source security/keys/Kconfig'
+security/Kconfig:290: warning: style: quotes recommended around 'security/selinux/Kconfig' in 'source security/selinux/Kconfig'
+security/Kconfig:291: warning: style: quotes recommended around 'security/smack/Kconfig' in 'source security/smack/Kconfig'
+security/Kconfig:292: warning: style: quotes recommended around 'security/tomoyo/Kconfig' in 'source security/tomoyo/Kconfig'
+security/Kconfig:293: warning: style: quotes recommended around 'security/apparmor/Kconfig' in 'source security/apparmor/Kconfig'
+security/Kconfig:294: warning: style: quotes recommended around 'security/loadpin/Kconfig' in 'source security/loadpin/Kconfig'
+security/Kconfig:295: warning: style: quotes recommended around 'security/yama/Kconfig' in 'source security/yama/Kconfig'
+security/Kconfig:297: warning: style: quotes recommended around 'security/integrity/Kconfig' in 'source security/integrity/Kconfig'
+warning: INTEGRITY_AUDIT (defined at security/integrity/Kconfig:54) has leading or trailing whitespace in its prompt
+security/integrity/Kconfig:69: warning: style: quotes recommended around 'security/integrity/ima/Kconfig' in 'source security/integrity/ima/Kconfig'
+security/integrity/Kconfig:70: warning: style: quotes recommended around 'security/integrity/evm/Kconfig' in 'source security/integrity/evm/Kconfig'
+drivers/crypto/Kconfig:250: warning: style: quotes recommended around 'drivers/crypto/caam/Kconfig' in 'source drivers/crypto/caam/Kconfig'
+crypto/Kconfig:1868: warning: style: quotes recommended around 'crypto/asymmetric_keys/Kconfig' in 'source crypto/asymmetric_keys/Kconfig'
+crypto/Kconfig:1869: warning: style: quotes recommended around 'certs/Kconfig' in 'source certs/Kconfig'
+arch/x86/kvm/Kconfig:101: warning: style: quotes recommended around 'drivers/vhost/Kconfig' in 'source drivers/vhost/Kconfig'
+warning: the int symbol GCC_VERSION (defined at init/Kconfig:14) has a non-int default Error: No compiler specified. Usage: 	linux-cosmic/scripts/gcc-version.sh <gcc-command> (undefined)
+warning: the choice symbol VIRT_CPU_ACCOUNTING_GEN (defined at init/Kconfig:366) is selected by the following symbols, but select/imply has no effect on choice symbols
+ - NO_HZ_FULL (defined at kernel/time/Kconfig:85)
+warning: the choice symbol M486 (defined at arch/x86/Kconfig.cpu:53) is selected by the following symbols, but select/imply has no effect on choice symbols
+ - X86_RDC321X (defined at arch/x86/Kconfig:662)
+warning: the choice symbol FB_LITTLE_ENDIAN (defined at drivers/video/fbdev/Kconfig:168) is selected by the following symbols, but select/imply has no effect on choice symbols
+ - FB_MB862XX_LIME (defined at drivers/video/fbdev/Kconfig:2189)
