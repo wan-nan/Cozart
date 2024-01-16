@@ -110,6 +110,31 @@ boot-time() {
     done
 }
 
+# measure the boot time of kernel
+mem-usage() {
+    make toggle-benchmark-mode
+    for app in $@; do
+        echo "Mem-usage $app on cozarted kernel"
+        $qemubin -cpu $cpu -enable-kvm -smp $cores -m $mem \
+            -kernel $kernelbuild/$linux/$base/$app/vmlinuz* \
+            -drive file="$(pwd)/qemu-disk.ext4",if=ide,format=raw \
+            -nographic -no-reboot \
+            -append "panic=-1 console=ttyS0 root=/dev/sda rw init=/benchmark-scripts/mem-usage.sh cozart" \
+            ;
+            # > $app.cozart.benchresult;
+
+        echo "Mem-usage $app on base kernel"
+       $qemubin -cpu $cpu -enable-kvm -smp $cores -m $mem \
+            -kernel $kernelbuild/$linux/$base/base/vmlinuz* \
+            -drive file="$(pwd)/qemu-disk.ext4",if=ide,format=raw \
+            -nographic -no-reboot \
+            -append "panic=-1 console=ttyS0 root=/dev/sda rw init=/benchmark-scripts/mem-usage.sh baseline" \
+            ;
+            # > $app.base.benchresult;
+
+    done
+}
+
 action=$1
 
 shift
