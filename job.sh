@@ -88,25 +88,30 @@ benchmark() {
 # measure the boot time of kernel
 boot-time() {
     make toggle-benchmark-mode
+    itr=10
     for app in $@; do
-        echo "Boot-time $app on cozarted kernel"
-        $qemubin -cpu $cpu -enable-kvm -smp $cores -m $mem \
-            -kernel $kernelbuild/$linux/$base/$app/vmlinuz* \
-            -drive file="$(pwd)/qemu-disk.ext4",if=ide,format=raw \
-            -nographic -no-reboot \
-            -append "panic=-1 console=ttyS0 root=/dev/sda rw init=/benchmark-scripts/boot-time.sh cozart" \
-            ;
-            # > $app.cozart.benchresult;
+        > ./test/$app/$app.cozart.boot-time
+        > ./test/$app/$app.base.boot-time
+        # echo "Boot-time $app on cozarted kernel"
+        for i in `seq $itr`; do
+            echo "$i-th boot"
+            
+            $qemubin -cpu $cpu -enable-kvm -smp $cores -m $mem \
+                -kernel $kernelbuild/$linux/$base/$app/vmlinuz* \
+                -drive file="$(pwd)/qemu-disk.ext4",if=ide,format=raw \
+                -nographic -no-reboot \
+                -append "panic=-1 console=ttyS0 root=/dev/sda rw init=/benchmark-scripts/boot-time.sh cozart" \
+                | grep "Boot cozart" >> ./test/$app/$app.cozart.boot-time;
 
-        echo "Boot-time $app on base kernel"
-       $qemubin -cpu $cpu -enable-kvm -smp $cores -m $mem \
-            -kernel $kernelbuild/$linux/$base/base/vmlinuz* \
-            -drive file="$(pwd)/qemu-disk.ext4",if=ide,format=raw \
-            -nographic -no-reboot \
-            -append "panic=-1 console=ttyS0 root=/dev/sda rw init=/benchmark-scripts/boot-time.sh baseline" \
-            ;
-            # > $app.base.benchresult;
-
+            $qemubin -cpu $cpu -enable-kvm -smp $cores -m $mem \
+                    -kernel $kernelbuild/$linux/$base/base/vmlinuz* \
+                    -drive file="$(pwd)/qemu-disk.ext4",if=ide,format=raw \
+                    -nographic -no-reboot \
+                    -append "panic=-1 console=ttyS0 root=/dev/sda rw init=/benchmark-scripts/boot-time.sh baseline" \
+                    | grep "Boot baseline" >> ./test/$app/$app.base.boot-time;
+        done
+        awk '{ sum += $4; n++ } END { if (n > 0) print "avg boot-time = ", sum / n; }' ./test/$app/$app.cozart.boot-time >> ./test/$app/$app.cozart.boot-time
+        awk '{ sum += $4; n++ } END { if (n > 0) print "avg boot-time = ", sum / n; }' ./test/$app/$app.base.boot-time >> ./test/$app/$app.base.boot-time
     done
 }
 
