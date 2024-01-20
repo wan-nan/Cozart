@@ -25,7 +25,14 @@ decompose_app() {
 compose() {
     for app in $@; do
         echo "Aggregate $app"
+        # ./aggregate-config.sh \
+        #     config-db/$linux/$base/base.config \
+        #     config-db/$linux/$base/base-choice.config \
+        #     config-db/$linux/$base/disable.config \
+        #     config-db/$linux/$base/boot.config \
+        #     $(locate_config_file $(decompose_app $app))
         ./aggregate-config.sh \
+            -a $app \
             config-db/$linux/$base/base.config \
             config-db/$linux/$base/base-choice.config \
             config-db/$linux/$base/disable.config \

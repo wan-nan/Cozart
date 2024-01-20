@@ -13,4 +13,4 @@ compiled-kernels/
 kernelbuild
 # *.benchresult
 /linux-*
-
+gcov-gprof-stats/
